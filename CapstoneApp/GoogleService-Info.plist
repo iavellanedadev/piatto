@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1005614183149-hdcr3p155rbrmtsii9m7pu5c2btoa0hk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1005614183149-hdcr3p155rbrmtsii9m7pu5c2btoa0hk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDt97EdYcFLmZys8-YvhtsigLKfyEjDSq0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1005614183149</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Consultant.CapstoneApp</string>
+	<key>PROJECT_ID</key>
+	<string>projectuno-5b1cf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>projectuno-5b1cf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1005614183149:ios:d4ed2832f85f7775fcd2e4</string>
+	<key>DATABASE_URL</key>
+	<string>https://projectuno-5b1cf.firebaseio.com</string>
+</dict>
+</plist>
