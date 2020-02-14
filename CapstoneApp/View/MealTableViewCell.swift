@@ -13,15 +13,30 @@ class MealTableViewCell: UITableViewCell {
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var mealsImageView: UIImageView!
     
+    let imgCache = NSCache<NSString, AnyObject>()
+    
     static let identifier = "MealTableViewCell"
     
     var meal: Meal!
     {
         didSet{
             mealNameLabel.text = meal.mealName
-            guard let dishImageUrl = URL(string: meal.image) else {return }
+            
+            if let cachedImage = imgCache.object(forKey:
+                NSString(string: meal.image)) as? UIImage
+            {
+                mealsImageView.image = cachedImage
+            }
+            
+            
+                guard let dishImageUrl = URL(string: meal.image) else {return }
                  
                  dishImageUrl.getImage {[weak self] img in
+                    
+                    guard let image = img, let mealUrl = self?.meal.image else {return}
+                    
+                    self?.imgCache.setObject(image, forKey: NSString(string: mealUrl))
+                    
                     self?.mealsImageView.image = img
                     }
         }

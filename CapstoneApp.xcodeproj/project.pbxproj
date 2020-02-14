@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02356BF023F473C1005A39AF /* CapstoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02356BEF23F473C1005A39AF /* CapstoneAppTests.swift */; };
+		02356BFE23F4740A005A39AF /* CapstoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02356BFD23F4740A005A39AF /* CapstoneAppUITests.swift */; };
 		024B091923EBD5E50014E543 /* FileServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091823EBD5E50014E543 /* FileServiceManager.swift */; };
 		024B091B23EBE79C0014E543 /* TextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091A23EBE79C0014E543 /* TextView+Extension.swift */; };
 		024B091E23EC0EA80014E543 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091C23EC0EA80014E543 /* MealTableViewCell.swift */; };
@@ -33,7 +35,30 @@
 		6F31F8B49DAC1B78E8047A34 /* libPods-CapstoneApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 132D6A356AA6DA99CF23AAFB /* libPods-CapstoneApp.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		02356BF223F473C1005A39AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C9ED6123D5DF11007F6E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C9ED6823D5DF11007F6E07;
+			remoteInfo = CapstoneApp;
+		};
+		02356C0023F4740A005A39AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C9ED6123D5DF11007F6E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C9ED6823D5DF11007F6E07;
+			remoteInfo = CapstoneApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		02356BED23F473C1005A39AF /* CapstoneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02356BEF23F473C1005A39AF /* CapstoneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppTests.swift; sourceTree = "<group>"; };
+		02356BF123F473C1005A39AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02356BFB23F4740A005A39AF /* CapstoneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02356BFD23F4740A005A39AF /* CapstoneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppUITests.swift; sourceTree = "<group>"; };
+		02356BFF23F4740A005A39AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024B091823EBD5E50014E543 /* FileServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceManager.swift; sourceTree = "<group>"; };
 		024B091A23EBE79C0014E543 /* TextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Extension.swift"; sourceTree = "<group>"; };
 		024B091C23EC0EA80014E543 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +90,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		02356BEA23F473C1005A39AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02356BF823F4740A005A39AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02C9ED6623D5DF11007F6E07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,10 +115,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02356BEE23F473C1005A39AF /* CapstoneAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				02356BEF23F473C1005A39AF /* CapstoneAppTests.swift */,
+				02356BF123F473C1005A39AF /* Info.plist */,
+			);
+			path = CapstoneAppTests;
+			sourceTree = "<group>";
+		};
+		02356BFC23F4740A005A39AF /* CapstoneAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02356BFD23F4740A005A39AF /* CapstoneAppUITests.swift */,
+				02356BFF23F4740A005A39AF /* Info.plist */,
+			);
+			path = CapstoneAppUITests;
+			sourceTree = "<group>";
+		};
 		02C9ED6023D5DF11007F6E07 = {
 			isa = PBXGroup;
 			children = (
 				02C9ED6B23D5DF11007F6E07 /* CapstoneApp */,
+				02356BEE23F473C1005A39AF /* CapstoneAppTests */,
+				02356BFC23F4740A005A39AF /* CapstoneAppUITests */,
 				02C9ED6A23D5DF11007F6E07 /* Products */,
 				19EDFCA27FCBD4D28D745212 /* Pods */,
 				3C048354A2004F27E62CFBDA /* Frameworks */,
@@ -90,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				02C9ED6923D5DF11007F6E07 /* CapstoneApp.app */,
+				02356BED23F473C1005A39AF /* CapstoneAppTests.xctest */,
+				02356BFB23F4740A005A39AF /* CapstoneAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +262,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		02356BEC23F473C1005A39AF /* CapstoneAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02356BF623F473C1005A39AF /* Build configuration list for PBXNativeTarget "CapstoneAppTests" */;
+			buildPhases = (
+				02356BE923F473C1005A39AF /* Sources */,
+				02356BEA23F473C1005A39AF /* Frameworks */,
+				02356BEB23F473C1005A39AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02356BF323F473C1005A39AF /* PBXTargetDependency */,
+			);
+			name = CapstoneAppTests;
+			productName = CapstoneAppTests;
+			productReference = 02356BED23F473C1005A39AF /* CapstoneAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02356BFA23F4740A005A39AF /* CapstoneAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02356C0223F4740A005A39AF /* Build configuration list for PBXNativeTarget "CapstoneAppUITests" */;
+			buildPhases = (
+				02356BF723F4740A005A39AF /* Sources */,
+				02356BF823F4740A005A39AF /* Frameworks */,
+				02356BF923F4740A005A39AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02356C0123F4740A005A39AF /* PBXTargetDependency */,
+			);
+			name = CapstoneAppUITests;
+			productName = CapstoneAppUITests;
+			productReference = 02356BFB23F4740A005A39AF /* CapstoneAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		02C9ED6823D5DF11007F6E07 /* CapstoneApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02C9ED7D23D5DF12007F6E07 /* Build configuration list for PBXNativeTarget "CapstoneApp" */;
@@ -229,6 +326,14 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Consultant;
 				TargetAttributes = {
+					02356BEC23F473C1005A39AF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 02C9ED6823D5DF11007F6E07;
+					};
+					02356BFA23F4740A005A39AF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 02C9ED6823D5DF11007F6E07;
+					};
 					02C9ED6823D5DF11007F6E07 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -248,11 +353,27 @@
 			projectRoot = "";
 			targets = (
 				02C9ED6823D5DF11007F6E07 /* CapstoneApp */,
+				02356BEC23F473C1005A39AF /* CapstoneAppTests */,
+				02356BFA23F4740A005A39AF /* CapstoneAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		02356BEB23F473C1005A39AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02356BF923F4740A005A39AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02C9ED6723D5DF11007F6E07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +414,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02356BE923F473C1005A39AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02356BF023F473C1005A39AF /* CapstoneAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02356BF723F4740A005A39AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02356BFE23F4740A005A39AF /* CapstoneAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02C9ED6523D5DF11007F6E07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +457,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		02356BF323F473C1005A39AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C9ED6823D5DF11007F6E07 /* CapstoneApp */;
+			targetProxy = 02356BF223F473C1005A39AF /* PBXContainerItemProxy */;
+		};
+		02356C0123F4740A005A39AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C9ED6823D5DF11007F6E07 /* CapstoneApp */;
+			targetProxy = 02356C0023F4740A005A39AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		02C9ED7223D5DF11007F6E07 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -340,6 +490,87 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		02356BF423F473C1005A39AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HTVL8P735;
+				INFOPLIST_FILE = CapstoneAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Consultant.CapstoneAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapstoneApp.app/CapstoneApp";
+			};
+			name = Debug;
+		};
+		02356BF523F473C1005A39AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HTVL8P735;
+				INFOPLIST_FILE = CapstoneAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Consultant.CapstoneAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapstoneApp.app/CapstoneApp";
+			};
+			name = Release;
+		};
+		02356C0323F4740A005A39AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HTVL8P735;
+				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = "${PODS_ROOT}/Firebase/Core/Sources";
+				INFOPLIST_FILE = CapstoneAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Consultant.CapstoneAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CapstoneApp;
+			};
+			name = Debug;
+		};
+		02356C0423F4740A005A39AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HTVL8P735;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = CapstoneAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Consultant.CapstoneAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CapstoneApp;
+			};
+			name = Release;
+		};
 		02C9ED7B23D5DF12007F6E07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -497,6 +728,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02356BF623F473C1005A39AF /* Build configuration list for PBXNativeTarget "CapstoneAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02356BF423F473C1005A39AF /* Debug */,
+				02356BF523F473C1005A39AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02356C0223F4740A005A39AF /* Build configuration list for PBXNativeTarget "CapstoneAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02356C0323F4740A005A39AF /* Debug */,
+				02356C0423F4740A005A39AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		02C9ED6423D5DF11007F6E07 /* Build configuration list for PBXProject "CapstoneApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
