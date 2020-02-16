@@ -2,15 +2,12 @@
 //  CapstoneAppTests.swift
 //  CapstoneAppTests
 //
-//  Created by Consultant on 2/12/20.
+//  Created by Consultant on 2/15/20.
 //  Copyright © 2020 Consultant. All rights reserved.
 //
 
 import XCTest
-import UIKit
-
 @testable import CapstoneApp
-
 
 class CapstoneAppTests: XCTestCase {
 
@@ -23,7 +20,6 @@ class CapstoneAppTests: XCTestCase {
     }
 
     func testExample() {
-            
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
