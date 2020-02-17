@@ -11,7 +11,8 @@ target 'CapstoneApp' do
 
   target 'CapstoneAppTests' do
 	inherit! :search_paths
-	pod 'Firebase'
+	pod 'Firebase/Database'
+	pod 'Firebase/Analytics'
   end
   
 
