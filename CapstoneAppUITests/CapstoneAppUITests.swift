@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import UIKit
 
 class CapstoneAppUITests: XCTestCase {
 
@@ -23,14 +24,6 @@ class CapstoneAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
     func testLaunchPerformance() {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
@@ -39,5 +32,31 @@ class CapstoneAppUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+    
+    func testSearchMeals()
+    {
+
+        let app = XCUIApplication()
+        app.launch()
+
+         let searchQuery = "chicken"
+        
+        let searchField = app.navigationBars["CapstoneApp.HomeView"].searchFields["Search"]
+        searchField.tap()
+        
+        searchField.typeText(searchQuery)
+        
+        app/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards",".buttons[\"search\"]",".buttons[\"Search\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+
+        
+        let brownStewCell = app.tables.children(matching: .cell).element(boundBy: 0).staticTexts["Brown Stew Chicken"]
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: brownStewCell, handler: nil)
+        
+        waitForExpectations(timeout: 3.0, handler: nil)
+            brownStewCell.tap()
+
+        
     }
 }

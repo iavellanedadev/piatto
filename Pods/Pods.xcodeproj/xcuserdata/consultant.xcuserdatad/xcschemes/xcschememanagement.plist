@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Firebase.xcscheme</key>
+		<key>Firebase-Analytics-Core-CoreOnly-Database.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Firebase.default-CoreOnly.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -19,16 +19,21 @@ class CapstoneAppTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetMeal() {
+        measure {
+            api.getMeals(with: "chicken") { mealResult in
+                switch mealResult
+                {
+                case .success(let meals):
+                    XCTAssert(meals.count > 0, "No Meals Found")
+                case .failure(let error):
+                    print("Error Fetching Meals in Test: \(error.localizedDescription)")
+                }
+            }
+        }
+
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+
 
 }
