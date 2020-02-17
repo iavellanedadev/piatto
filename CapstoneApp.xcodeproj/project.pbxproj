@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02356BFE23F4740A005A39AF /* CapstoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02356BFD23F4740A005A39AF /* CapstoneAppUITests.swift */; };
+		0247744623FAFC5F002AC006 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247744523FAFC5F002AC006 /* LoginViewController.swift */; };
 		024B091923EBD5E50014E543 /* FileServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091823EBD5E50014E543 /* FileServiceManager.swift */; };
 		024B091B23EBE79C0014E543 /* TextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091A23EBE79C0014E543 /* TextView+Extension.swift */; };
 		024B091E23EC0EA80014E543 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091C23EC0EA80014E543 /* MealTableViewCell.swift */; };
@@ -57,6 +58,7 @@
 		02356BFB23F4740A005A39AF /* CapstoneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02356BFD23F4740A005A39AF /* CapstoneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppUITests.swift; sourceTree = "<group>"; };
 		02356BFF23F4740A005A39AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0247744523FAFC5F002AC006 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		024B091823EBD5E50014E543 /* FileServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceManager.swift; sourceTree = "<group>"; };
 		024B091A23EBE79C0014E543 /* TextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Extension.swift"; sourceTree = "<group>"; };
 		024B091C23EC0EA80014E543 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				02C9ED9B23E08E67007F6E07 /* MealDetailsViewController.swift */,
 				02C9ED9F23EBB6B5007F6E07 /* RecipeAddViewController.swift */,
 				024B092023EC288A0014E543 /* CustomDetailsViewController.swift */,
+				0247744523FAFC5F002AC006 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				024B091B23EBE79C0014E543 /* TextView+Extension.swift in Sources */,
 				02C9ED9C23E08E67007F6E07 /* MealDetailsViewController.swift in Sources */,
 				02C9ED8D23D9EDAF007F6E07 /* IngredientRecipeService.swift in Sources */,
+				0247744623FAFC5F002AC006 /* LoginViewController.swift in Sources */,
 				02C9ED8923D8E92B007F6E07 /* RecipesViewController.swift in Sources */,
 				02C9ED8F23D9F1A8007F6E07 /* Recipe.swift in Sources */,
 				02C9ED9123DA0A7D007F6E07 /* Meal.swift in Sources */,
