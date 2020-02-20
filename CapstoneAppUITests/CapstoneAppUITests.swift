@@ -24,7 +24,6 @@ class CapstoneAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-
     func testLaunchPerformance() {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
@@ -34,14 +33,12 @@ class CapstoneAppUITests: XCTestCase {
         }
     }
     
-    
     func testSearchMeals()
     {
-
         let app = XCUIApplication()
         app.launch()
 
-         let searchQuery = "chicken"
+        let searchQuery = "chicken"
         
         let searchField = app.navigationBars["CapstoneApp.HomeView"].searchFields["Search"]
         searchField.tap()
@@ -50,13 +47,10 @@ class CapstoneAppUITests: XCTestCase {
         
         app/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards",".buttons[\"search\"]",".buttons[\"Search\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
 
-        
         let brownStewCell = app.tables.children(matching: .cell).element(boundBy: 0).staticTexts["Brown Stew Chicken"]
         expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: brownStewCell, handler: nil)
         
         waitForExpectations(timeout: 3.0, handler: nil)
             brownStewCell.tap()
-
-        
     }
 }

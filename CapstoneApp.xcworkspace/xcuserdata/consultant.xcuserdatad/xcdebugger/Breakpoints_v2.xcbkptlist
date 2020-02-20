@@ -3,4 +3,54 @@
    uuid = "B1AA94A5-EBEE-4C98-B807-F083C5E767C4"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01A8253A-102C-477A-817C-96A2F870FE55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CapstoneApp/Service/IngredientRecipeService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "getRecipe(meal:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "01A8253A-102C-477A-817C-96A2F870FE55 - ee2c75d890a88c7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CapstoneApp.IngredientRecipeService.getRecipe(meal: CapstoneApp.Meal, completion: (Swift.Result&lt;CapstoneApp.Recipe, CapstoneApp.MealsError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CapstoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Documents/TrainingProjects/CapstoneApp/CapstoneApp/Service/IngredientRecipeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "514">
+               </Location>
+               <Location
+                  uuid = "01A8253A-102C-477A-817C-96A2F870FE55 - 884844e46d398743"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CapstoneApp.IngredientRecipeService.getRecipe(meal: CapstoneApp.Meal, completion: (Swift.Result&lt;CapstoneApp.Recipe, CapstoneApp.MealsError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CapstoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Documents/TrainingProjects/CapstoneApp/CapstoneApp/Service/IngredientRecipeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "750">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

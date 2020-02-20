@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		02356BFE23F4740A005A39AF /* CapstoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02356BFD23F4740A005A39AF /* CapstoneAppUITests.swift */; };
 		0247744623FAFC5F002AC006 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247744523FAFC5F002AC006 /* LoginViewController.swift */; };
+		0247744823FC4D7B002AC006 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247744723FC4D7B002AC006 /* DBHelper.swift */; };
+		0247744B23FDB8EF002AC006 /* mockMeals.json in Resources */ = {isa = PBXBuildFile; fileRef = 0247744A23FDB8EF002AC006 /* mockMeals.json */; };
+		0247744D23FDDAD5002AC006 /* mockRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 0247744C23FDDAD5002AC006 /* mockRecipe.json */; };
 		024B091923EBD5E50014E543 /* FileServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091823EBD5E50014E543 /* FileServiceManager.swift */; };
 		024B091B23EBE79C0014E543 /* TextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091A23EBE79C0014E543 /* TextView+Extension.swift */; };
 		024B091E23EC0EA80014E543 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024B091C23EC0EA80014E543 /* MealTableViewCell.swift */; };
@@ -59,6 +62,9 @@
 		02356BFD23F4740A005A39AF /* CapstoneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppUITests.swift; sourceTree = "<group>"; };
 		02356BFF23F4740A005A39AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0247744523FAFC5F002AC006 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0247744723FC4D7B002AC006 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		0247744A23FDB8EF002AC006 /* mockMeals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockMeals.json; sourceTree = "<group>"; };
+		0247744C23FDDAD5002AC006 /* mockRecipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockRecipe.json; sourceTree = "<group>"; };
 		024B091823EBD5E50014E543 /* FileServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceManager.swift; sourceTree = "<group>"; };
 		024B091A23EBE79C0014E543 /* TextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Extension.swift"; sourceTree = "<group>"; };
 		024B091C23EC0EA80014E543 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
@@ -131,9 +137,19 @@
 			path = CapstoneAppUITests;
 			sourceTree = "<group>";
 		};
+		0247744923FDB8C1002AC006 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				0247744A23FDB8EF002AC006 /* mockMeals.json */,
+				0247744C23FDDAD5002AC006 /* mockRecipe.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 		0292192323F8D82900992603 /* CapstoneAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				0247744923FDB8C1002AC006 /* MockData */,
 				0292192423F8D82900992603 /* CapstoneAppTests.swift */,
 				0292192623F8D82900992603 /* Info.plist */,
 			);
@@ -236,6 +252,7 @@
 				02C9ED9223DA0B17007F6E07 /* RecipeAPI.swift */,
 				02C9ED9D23EB3080007F6E07 /* FirebaseSource.swift */,
 				024B091823EBD5E50014E543 /* FileServiceManager.swift */,
+				0247744723FC4D7B002AC006 /* DBHelper.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -383,6 +400,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0247744B23FDB8EF002AC006 /* mockMeals.json in Resources */,
+				0247744D23FDDAD5002AC006 /* mockRecipe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +494,7 @@
 				0247744623FAFC5F002AC006 /* LoginViewController.swift in Sources */,
 				02C9ED8923D8E92B007F6E07 /* RecipesViewController.swift in Sources */,
 				02C9ED8F23D9F1A8007F6E07 /* Recipe.swift in Sources */,
+				0247744823FC4D7B002AC006 /* DBHelper.swift in Sources */,
 				02C9ED9123DA0A7D007F6E07 /* Meal.swift in Sources */,
 				02C9ED9823E08822007F6E07 /* Url+Extension.swift in Sources */,
 				02C9ED7123D5DF11007F6E07 /* HomeViewController.swift in Sources */,

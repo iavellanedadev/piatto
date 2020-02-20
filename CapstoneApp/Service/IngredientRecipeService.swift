@@ -14,13 +14,23 @@ enum MealsError: Error{
     case badDecoder(String)
 }
 
+protocol MealFetchServiceable
+{
+    func getMeals(with parameter: String, completion: @escaping MealsHandler)
+}
+
+protocol RecipeFetchServiceable
+{
+    func getRecipe(meal: Meal, completion: @escaping RecipeHandler)
+}
+
 typealias MealsHandler = (Result<[Meal], MealsError>) -> Void
 
 typealias RecipeHandler = (Result<Recipe, MealsError>) -> Void
 
 let api = IngredientRecipeService.shared
 
-final class IngredientRecipeService
+final class IngredientRecipeService: MealFetchServiceable, RecipeFetchServiceable
 {
     static let shared = IngredientRecipeService()
     
@@ -37,9 +47,7 @@ final class IngredientRecipeService
         guard let url = RecipeAPI(parameter, LookupType.ingredient).recipeUrl else {
                   completion(.failure(.badUrl("Couldn't Create Meal URL")))
                   return }
-        
     
-       
             URLSession.shared.dataTask(with: url) { (dat, _, err) in
                          if let error = err{
                              completion(.failure(.badDataTask(error.localizedDescription)))
@@ -67,7 +75,6 @@ final class IngredientRecipeService
 
                   completion(.success(meals))
                   return }
-        
               URLSession.shared.dataTask(with: url2) { (dat, _, err) in
                       if let error = err{
                         print("Error on Second Call: \(error.localizedDescription)")
